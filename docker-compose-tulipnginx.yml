@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  tulipnginx:
+    image: nginx
+    restart: unless-stopped
+networks:
+  default:
+    name: nginx-proxy-manager-network
